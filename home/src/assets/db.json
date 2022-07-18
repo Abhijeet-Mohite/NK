@@ -1,0 +1,76 @@
+{
+  "customerReigitser": [
+    {
+      "customerId": 4,
+      "firstName": "4",
+      "lastName": "4",
+      "username": "4",
+      "password": "4",
+      "emailId": "4",
+      "mobileNo": 4,
+      "id": 1
+    },
+    {
+      "customerId": 5,
+      "firstName": "5",
+      "lastName": "5",
+      "username": "5",
+      "password": "5",
+      "emailId": "5",
+      "mobileNo": 5,
+      "id": 2
+    },
+    {
+      "customerId": 8,
+      "firstName": "8",
+      "lastName": "8",
+      "username": "8",
+      "password": "8",
+      "emailId": "8",
+      "mobileNo": 8,
+      "id": 3
+    },
+    {
+      "customerId": 6,
+      "firstName": "6",
+      "lastName": "6",
+      "username": "6",
+      "password": "6",
+      "emailId": "6",
+      "mobileNo": 6,
+      "id": 4
+    }
+  ],
+  "applyloan":
+  {
+    
+    "applyLoanId":0,
+    "firstName":"",
+    "middleName":"",
+    "lastName":"",
+    "permanentAddress":"",
+    "localAddress":"",
+    "mobileNo":0,
+    "emailId":"",
+    "dateOfBirth":"",
+    "occupation":"",
+    "bankName":"",
+    "bankAccountNo":0,
+    "bankIfscCode":"",
+    "loanAmount":0,
+    "status":"",
+    "tenure":0,
+    "rateOfInterest":0,
+      "aadharCard":[],
+     "panCard":[],
+     "bankDetails":[],
+     "salarySlips":[],
+     "itrReturn":[],
+     "estimation":[],
+     "propertyPaper":[],
+     "signature":[],
+     "thumb":[],
+     "blankCheque": [],
+     "photo":[]
+  }
+}

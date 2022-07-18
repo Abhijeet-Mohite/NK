@@ -1,0 +1,151 @@
+ 
+<p>customerlogin works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>The Easiest Way to Add Input Masks to Your Forms</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" >
+</head>
+<body>
+ <div class="registration-form">
+   <form align="center" [formGroup]="customerLoginForm" (ngSubmit)="logincustomer()">
+       <h4 class="form-title">Customer Login</h4><br>
+       <div class="form-icon-transperant">
+         <img
+         src="assets\images\icons\9785412.png"
+         alt="user"
+         class="rounded-circle"
+         width="50"
+       />
+     </div><br>
+
+         <div class="form-group">
+           <input type="number" class="form-control" formControlName="applyLoanId" placeholder="applyLoanId">
+       </div>
+         <div class="form-group">
+           <input type="text" class="form-control" formControlName="firstName" placeholder="firstName">
+       </div>
+       <div class="form-group">
+         <div class="form-group">
+           <input type="text" class="form-control" formControlName="middleName" placeholder="middleName">
+       </div>
+       <div class="form-group">
+         <input type="text" class="form-control" formControlName="lastName" placeholder="lastName">
+     </div>
+         <div class="form-group">
+           <input type="text" class="form-control" formControlName="permanentAddress" placeholder="permanentAddress">
+       </div>
+
+       <div class="form-group">
+         <input type="text" class="form-control" formControlName="localAddress" placeholder="localAddress">
+     </div>
+       <div class="form-group">
+         <input type="number" class="form-control" formControlName="mobileNo" placeholder="mobileNo">
+     </div>
+     <div class="form-group">
+       <div class="form-group">
+         <input type="text" class="form-control" formControlName="emailId" placeholder="emailId">
+     </div>
+       <div class="form-group">
+         <input type="text" class="form-control" formControlName="dateOfBirth" placeholder="dateOfBirth">
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" formControlName="dateOfBirth" placeholder="dateOfBirth">
+   </div>
+     <div class="form-group">
+       <input type="text" class="form-control" formControlName="occupation" placeholder="occupation">
+   </div>
+     <div class="form-group">
+       <input type="text" class="form-control" formControlName="bankName" placeholder="bankName"> 
+       
+   </div>
+   <div class="form-group">
+     <div class="form-group">
+       <input type="number" class="form-control" formControlName="bankAccountNo" placeholder="bankAccountNo">
+   </div>
+     <div class="form-group">
+       <input type="number" class="form-control" formControlName="bankIfscCode" placeholder="bankIfscCode">
+   </div>
+
+   <div class="form-group">
+     <input type="number" class="form-control" formControlName="loanAmount" placeholder="loanAmount">
+ </div>
+   <div class="form-group">
+     <input type="text" class="form-control" formControlName="status" placeholder="status">
+ </div>
+ <div class="form-group">
+   <div class="form-group">
+     <input type="number" class="form-control" formControlName="tenure" placeholder="tenure">
+ </div>
+   <div class="form-group">
+     <input type="number" class="form-control" formControlName="rateOfInterest" placeholder="rateOfInterest">
+ </div>
+ 
+ <!-- <div class="form-group">
+   <input type="text" class="form-control" formControlName="panCard" placeholder="panCard">
+</div> -->
+<div class="form-group">
+    <input type="file" class="form-control" formControlName="panCard"  >
+    <!-- <img [src]="imagesrc1" height="150"><br> -->
+ </div>
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="adharCard" placeholder="adharCard">
+</div>
+
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="bankDetails" placeholder="bankDetails">
+</div>
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="salarySlips" placeholder="salarySlips"> 
+   
+</div>
+<div class="form-group">
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="itrReturn" placeholder="itrReturn">
+</div>
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="estimation" placeholder="estimation">
+</div>
+
+<div class="form-group">
+ <input type="file" class="form-control" formControlName="propertyPaper" placeholder="propertyPaper">
+</div>
+
+<div class="form-group">
+<input type="file" class="form-control" formControlName="signature" placeholder="signature">
+</div>
+<div class="form-group">
+<input type="file" class="form-control" formControlName="thumb" placeholder="thumb">
+</div>
+<div class="form-group">
+<div class="form-group">
+<input type="file" class="form-control" formControlName="blankCheque" placeholder="blankCheque">
+</div>
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+ <form action="/action_page.php">
+   <label for="myfile">Select a file:</label>
+   <input type="file" id="myfile" name="photo"><br><br>
+   <input type="submit">
+ </form>
+</body>
+</html> -->
+
+<div class="form-group">
+<input type="file" class="form-control" formControlName="photo" placeholder="photo">
+</div>
+
+         <input type="submit"   value="submit enquiry" [disabled]="!customerLoginForm.valid" class="btn btn-block create-account"><br>
+     </div>
+     
+   </div>
+   
+   
+   <router-outlet></router-outlet>
